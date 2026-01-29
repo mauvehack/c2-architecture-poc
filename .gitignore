@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.py[cod]
+venv/
+
+# Database
+*.db
+*.sqlite
+
+# OS Generated
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+
+# Compiled Binaries (Implant)
+implant/beacon_linux
+implant/beacon.exe
+implant/bin/

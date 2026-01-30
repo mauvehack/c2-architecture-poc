@@ -72,17 +72,23 @@ The implant will receive this signal on its next check-in and terminate its proc
 Appendix: Proof of Concept Gallery
 The following artifacts were captured during a controlled validation of the infrastructure in an AWS/Kali Linux environment.
 
-1. Infrastructure Deployment
-Provisioning the Team Server (Redirector) on AWS EC2. Note the separation of public ingress and private management interfaces.
+### **1. Infrastructure Deployment**
+*Provisioning the Team Server (Redirector) on AWS EC2. Note the separation of public ingress and private management interfaces.*
+![AWS Infrastructure](img/01_infrastructure_setup.png)
 
-2. Payload Staging
-The local listener initialized on the operator's console, preparing to receive the tunneled connection.
+### **2. Payload Staging**
+*The local listener initialized on the operator's console, preparing to receive the tunneled connection.*
+![Local Listener](img/02_local_listener.png)
 
-3. Tunnel Establishment
-Successful creation of the Reverse SSH Tunnel, forwarding the AWS Public IP traffic to the local listener.
+### **3. Tunnel Establishment**
+*Successful creation of the Reverse SSH Tunnel, forwarding the AWS Public IP traffic to the local listener.*
+![Tunnel Setup](img/03_tunnel_establishment.png)
 
-4. Kill Chain Validation
-End-to-End connectivity confirmed: The victim (browser) connects to the AWS Redirector, and the traffic is successfully tunneled to the local C2 server.
+### **4. Kill Chain Validation**
+*End-to-End connectivity confirmed: The victim (browser) connects to the AWS Redirector, and the traffic is successfully tunneled to the local C2 server.*
+![Full Chain Success](img/04_full_chain_poc.jpg)
+
+
 
 
 

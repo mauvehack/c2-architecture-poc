@@ -23,6 +23,8 @@ This is a study in persistence.
 
 The framework utilizes a distributed client-server model designed for high-latency, hostile environments. It does not maintain a connection; it pulses.
 
+The framework utilizes a distributed client-server model designed for high-latency, hostile environments. It does not maintain a connection; it pulses.
+
 ```mermaid
 graph LR
     A[Operator Console] -- REST API --> B(Team Server)
@@ -32,11 +34,8 @@ graph LR
     style A fill:#f9f,stroke:#333,stroke-width:2px
     style B fill:#bbf,stroke:#333,stroke-width:2px
     style D fill:#bfb,stroke:#333,stroke-width:2px
-
-
-    ## **Core Components**
-    
-    #Team Server (Python/Flask):The central nervous system. It manages listener state, queues asynchronous tasks, and persists operational data to a relational database. It never touches the target directly.
+Core Components
+Team Server (Python/Flask): The central nervous system. It manages listener state, queues asynchronous tasks, and persists operational data to a relational database. It never touches the target directly.
     
     #The Implant (Go/C):A lightweight, cross-platform agent that executes on the target. It operates on a strict "pull" basis—polling the server for work to bypass inbound firewall restrictions. It is designed to be expendable.
     

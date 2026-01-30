@@ -108,7 +108,7 @@ The following artifacts were captured during a controlled validation of the infr
 
 ### **4. Kill Chain Validation**
 *End-to-End connectivity confirmed: The victim (browser) connects to the AWS Redirector, and the traffic is successfully tunneled to the local C2 server.*
-> [📂 View Screenshot: Full Chain Success](img/04_full_chain_poc.jpg)
+> [📂 View Screenshot: Full Chain Success](img/04_full_chain_poc.png)
 
 
 
